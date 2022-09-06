@@ -1,0 +1,61 @@
+//Color
+$color-default-white: #ffffff;
+$gradient-default: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+$play-button-gradient: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
+$background-transparent: transparent;
+$color-blue-zodiac: #102654;
+$color-video-fade: rgba(20, 54, 122, 0.5);
+$color-white-lilac: #f8f9fc;
+$color-blue-zodiac-transparent: rgba(16, 38, 84, 0.5);
+$color-boulder: #787878;
+$color-razzmatazz: #d10a42;
+$color-blue-bayoux: #495a7d;
+$color-torea-bay: #103aae;
+$color-red-ribbon: #ed0233;
+$color-governor-bay: #2e35ac;
+$color-biscay: #1c3374;
+
+//Gradients
+
+$top-gradient: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+$border-gradient: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+//Typography
+$ff-roboto-condensed: "Roboto Condensed", "Arial", sans-serif;
+$ff-bebas-neue: "Bebas Neue", "Arial", sans-serif;
+
+// Viewports
+// ---------------------------------
+$narrow-vp: "(max-width: 767px)";
+$not-narrow-vp: "(min-width: 768px)";
+$middle-vp: "(min-width: 768px) and (max-width: 1199px)";
+$wide-vp: "(min-width: 1200px)";
+$not-wide-vp: "(max-width: 1199px)";
+
+// Retina
+// ---------------------------------
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+//variables
+$navigation-indent: 40px;
+$header-height: 86px;
+$section-title-color: $color-blue-zodiac;
+$section-background-color: $color-white-lilac;
+$tab-button-color: $color-blue-zodiac-transparent;
+$tab-button-active-color: $color-blue-zodiac;
+$tab-control-active-color: $color-razzmatazz;
+$tab-navigation-indicator-color: rgba(120, 120, 120, 0.2);
+$subscription-price-color: $color-torea-bay;
+$subscription-price-shadow-price-color: rgba(232, 232, 232, 0.48);
+$subscription-border-gradient: $border-gradient;
+$competition-color: $color-red-ribbon;
+$coaches-info-background-color: rgba(16, 38, 84, 0.89);
+$color-slider-control: #afafaf;
+$advantages-gradient: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
+$advantages-main-card-background-color: $color-biscay;
+$advantages-line-color: rgba(209, 10, 66, 0.2);
+$review-background-color: $color-biscay;
+$sport-text-color: #b6bdcc;
+$connection-border-color: #74819c;
+$footer-background-color: #030a1a;

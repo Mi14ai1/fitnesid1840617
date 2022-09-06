@@ -1,0 +1,90 @@
+.subscription-tabs {
+  position: relative;
+  z-index: 5;
+}
+
+.subscription-tabs__controls-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(67px, 1fr));
+  max-width: 341px;
+  width: 100%;
+  padding: 0 0 1px;
+  margin: 0 auto;
+  list-style: none;
+  box-shadow: 0 2px 0 0 $tab-navigation-indicator-color;
+
+  @media #{$middle-vp} {
+    max-width: 331px;
+  }
+}
+
+.subscription-tabs__controls-item {
+  position: relative;
+  width: fit-content;
+
+  &:last-child {
+    justify-self: flex-end;
+  }
+}
+
+.subscription-tabs__button {
+  position: relative;
+  font-family: $ff-roboto-condensed;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $tab-button-color;
+
+  padding: 0;
+
+  &--active {
+    color: $tab-button-active-color;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -1px;
+      bottom: -13px;
+      width: calc(100% + 1px);
+      height: 2px;
+      background: $tab-control-active-color;
+
+      @media #{$narrow-vp} {
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  &:hover {
+    background: none;
+    color: $tab-button-active-color;
+  }
+
+  @media #{$middle-vp} {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @media #{$narrow-vp} {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.subscription-tabs__content {
+  padding-top: 40px;
+
+  @media #{$not-wide-vp} {
+    max-width: 442px;
+    margin: 0 auto;
+  }
+
+  @media #{$middle-vp} {
+    padding-top: 45px;
+  }
+
+  @media #{$narrow-vp} {
+    padding-top: 37px;
+  }
+}

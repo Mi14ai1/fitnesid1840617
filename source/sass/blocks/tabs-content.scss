@@ -1,0 +1,28 @@
+.tabs-content__cards-list {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+
+  @media #{$wide-vp} {
+    row-gap: 10px;
+  }
+
+  @media #{$not-wide-vp} {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tabs-content__cards-item + .tabs-content__cards-item {
+  @media #{$not-wide-vp} {
+    margin-top: 41px;
+  }
+
+  @media #{$narrow-vp} {
+    margin-top: 35px;
+  }
+}

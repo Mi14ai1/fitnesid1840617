@@ -1,0 +1,28 @@
+.header-phone {
+  margin-left: auto;
+}
+
+.header-phone a {
+  font-family: $ff-bebas-neue;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: $color-default-white;
+  text-decoration: none;
+
+  @media #{$not-wide-vp} {
+    letter-spacing: 0.02em;
+  }
+
+  @media #{$middle-vp} {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+
+  @media #{$narrow-vp} {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

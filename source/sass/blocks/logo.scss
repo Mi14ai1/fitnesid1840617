@@ -1,0 +1,13 @@
+.logo {
+  img {
+    width: 100%;
+  }
+
+  @media #{$middle-vp} {
+    height: 17px;
+  }
+
+  @media #{$narrow-vp} {
+    height: 15px;
+  }
+}

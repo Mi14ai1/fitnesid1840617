@@ -1,0 +1,78 @@
+.container {
+  box-sizing: border-box;
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media #{$middle-vp} {
+    padding: 0 45px;
+  }
+
+  @media #{$narrow-vp} {
+    padding: 0 15px;
+  }
+
+  &--advantages {
+    @media #{$middle-vp} {
+      padding: 0 20px;
+    }
+
+    @media #{$narrow-vp} {
+      padding: 0;
+    }
+  }
+
+  &--header {
+    padding: 30px 90px 35px 30px;
+
+    @media #{$middle-vp} {
+      padding: 20px 64px 25px 50px;
+    }
+
+    @media #{$narrow-vp} {
+      padding: 15px 29px 20px 26px;
+    }
+  }
+
+  &--presentation-media {
+    @media #{$narrow-vp} {
+      padding: 0;
+    }
+  }
+
+  &--coaches {
+    max-width: 1272px;
+
+    @media (max-width: 1365px) and (min-width: 1200px) {
+      max-width: calc(100vw - 166px);
+    }
+
+    @media #{$narrow-vp} {
+      padding: 0 16px;
+    }
+  }
+
+  &--competition {
+    padding: 0;
+
+    @media #{$middle-vp} {
+      padding: 0;
+    }
+
+    @media #{$narrow-vp} {
+      padding: 0;
+    }
+  }
+
+  &--reviews {
+    @media #{$middle-vp} {
+      padding: 40px 45px 100px;
+    }
+  }
+
+  &--footer {
+    @media #{$middle-vp} {
+      padding: 0 39px 0 45px;
+    }
+  }
+}

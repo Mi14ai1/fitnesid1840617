@@ -1,0 +1,55 @@
+.slider-controls {
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  width: 37px;
+  height: 37px;
+  z-index: 10;
+  padding: 10px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 23px;
+    height: 23px;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    border-color: $color-slider-control;
+
+    @media #{$narrow-vp} {
+      width: 13px;
+      height: 13px;
+    }
+  }
+
+
+  &--next {
+    right: 0;
+    transform: translate(2px, -50%);
+
+    &::before {
+      right: 50%;
+      transform-origin: top right;
+      transform: rotate(225deg) translate(50%, -50%);
+    }
+  }
+
+  &--prev {
+    left: 0;
+    transform: translate(-2px, -50%);
+
+    &::before {
+      left: 50%;
+      transform-origin: top left;
+      transform: rotate(45deg) translate(-50%, -50%);
+    }
+  }
+
+  @media #{$narrow-vp} {
+    width: 20px;
+    height: 30px;
+    padding: 0;
+  }
+}

@@ -1,0 +1,23 @@
+.page__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page__header,
+.page__footer {
+  flex-shrink: 0;
+}
+
+.page__main {
+  flex-grow: 1;
+}
+
+.page__body {
+  margin: 0;
+
+  picture {
+    line-height: 0;
+  }
+}

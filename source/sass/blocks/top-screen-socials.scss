@@ -1,0 +1,29 @@
+.top-screen-socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  max-height: 100%;
+  list-style: none;
+  padding: 0;
+
+  a {
+    font-family: $ff-roboto-condensed;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    color: $color-default-white;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: none;
+  }
+
+  @media #{$not-wide-vp} {
+    display: none;
+  }
+}
+
+.top-screen-socials__item + .top-screen-socials__item {
+  margin-top: 15px;
+}
