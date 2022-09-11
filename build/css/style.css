@@ -1905,6 +1905,11 @@ template {
   text-align: center;
 }
 
+.promo a:focus-visible {
+  -webkit-box-shadow: 0 0 12px 0 #102654;
+  box-shadow: 0 0 12px 0 #102654;
+}
+
 .promo__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2438,6 +2443,12 @@ template {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-area: 1 / 2 / 3 / 3;
+  }
+
+  .promo a {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .promo-main {
