@@ -3,6 +3,10 @@
   padding-bottom: 120px;
   background: $section-background-color;
 
+  @media #{$not-narrow-vp} {
+    position: relative;
+  }
+
   @media #{$middle-vp} {
     padding-top: 100px;
     padding-bottom: 99px;
@@ -29,21 +33,42 @@
 
 .subscription__plates {
   position: absolute;
-  right: -103px;
-  bottom: -274px;
+  width: 100%;
+  bottom: -148px;
   z-index: 1;
+  overflow: hidden;
 
-  @media (max-width: 1365px) {
-    right: calc((-100vw + 100%) / 2);
+  .subscription__plates-container {
+    position: relative;
+    width: 1160px;
+    margin: 0 auto;
+
+    &--overflow {
+      width: 1446px;
+
+      @media #{$middle-vp} {
+        width: 844px;
+      }
+    }
+
+    @media #{$middle-vp} {
+      width: 100%;
+    }
+  }
+
+  img {
+    display: block;
+    position: relative;
+    margin-left: auto;
+
+    @media #{$middle-vp} {
+      width: 423px;
+      height: 100%;
+    }
   }
 
   @media #{$middle-vp} {
-    bottom: -228px;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
+    bottom: -125px;
   }
 
   @media #{$narrow-vp} {

@@ -11,14 +11,11 @@
 @import "variables";
 @import "global/fonts";
 @import "global/container";
-@import "global/visually-hidden";
 
 // Blocks
 // ---------------------------------
 @import "blocks/page";
 @import "blocks/button";
-@import "blocks/header";
-@import "blocks/logo";
 @import "blocks/header-phone";
 @import "blocks/footer";
 @import "blocks/navigation";
@@ -26,7 +23,8 @@
 @import "blocks/top-screen";
 @import "blocks/top-screen-socials";
 @import "blocks/top-screen-text";
-@import "blocks/section-title";
+@import "blocks/header";
+@import "blocks/logo";
 @import "blocks/presentation";
 @import "blocks/presentation-text";
 @import "blocks/presentation-media";
@@ -35,15 +33,19 @@
 @import "blocks/subscription-card";
 @import "blocks/tabs-content";
 @import "blocks/competition";
-@import "blocks/competition-date";
 @import "blocks/competition-text";
+@import "blocks/competition-date";
 @import "blocks/coaches";
 @import "blocks/coaches-slider";
 @import "blocks/coaches-card";
+@import "blocks/coaches-card-title";
 @import "blocks/advantages";
 @import "blocks/advantages-card";
+@import "blocks/advantages-card-definition";
+@import "blocks/advantages-card-description";
 @import "blocks/promo";
 @import "blocks/promo-main";
+@import "blocks/promo-main-text";
 @import "blocks/promo-card";
 @import "blocks/reviews";
 @import "blocks/reviews-carousel";
@@ -55,7 +57,8 @@
 @import "blocks/tab";
 
 // ---------------------------------
-
+@import "global/visually-hidden";
+@import "global/no-script";
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
 
 // ❗ обязательно используйте @media для отключения ховеров на тач устройствах

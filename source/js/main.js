@@ -1,14 +1,48 @@
-import './modules/scrolldetect.js';
-
 const ACTIVE = 'subscription-tabs__button--active';
 const TABACTIVE = 'tab--active';
-const TICKET = ['js-month', 'js-half-year', 'js-year'];
+const TICKETS = ['js-month', 'js-half-year', 'js-year'];
+const PHONELENGTH = {
+  withoutCode: 10,
+  withCode: 11,
+};
+
+const connection = document.querySelector('.connection');
+const form = connection.querySelector('form');
+
+const noScriptBlocks = document.querySelectorAll('.no-script');
 
 const tabButtons = document.querySelectorAll('.subscription-tabs__button');
 const tabs = document.querySelectorAll('.tab');
 
+noScriptBlocks.forEach((el)=>{
+  el.classList.remove('no-script');
+});
+
+const getFormData = (element) => {
+  const name = element.querySelector('input[name=name]').value;
+  const phone = element.querySelector('input[name=phone]').value;
+  localStorage.setItem('name', name);
+  localStorage.setItem('phone', phone);
+};
+
+if (form) {
+  form.addEventListener('submit', (evt) => {
+    evt.preventDefault();
+    getFormData(form);
+
+    const phone = form.querySelector('input[name=phone]');
+    const name = form.querySelector('input[name=name]');
+    phone.value = phone.value.replace(/\D/g, '');
+    name.value = name.value.replace(/\W/, '');
+    if (phone.value.length < PHONELENGTH.withoutCode || phone.value.length > PHONELENGTH.withCode) {
+      return;
+    }
+    form.submit();
+  });
+}
+
 const showTab = (button) => {
-  TICKET.forEach((el) => {
+  TICKETS.forEach((el) => {
     if (button.classList.contains(el)) {
       tabs.forEach((tab) => {
         if (tab.classList.contains(el)) {
@@ -21,7 +55,6 @@ const showTab = (button) => {
 };
 
 tabButtons.forEach((button) => {
-
   button.addEventListener('click', (evt) => {
     evt.preventDefault();
     const tabButton = evt.target;
@@ -42,24 +75,25 @@ tabButtons.forEach((button) => {
     tabButton.classList.add(`${ACTIVE}`);
 
     showTab(evt.target);
-
-
   });
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+
   const video = document.querySelector('.presentation-media__video');
-  const playButton = video.querySelector('.presentation-media__video-play');
-  const preview = video.querySelector('img');
-  const videoSource = video.dataset.source;
-
-  playButton.addEventListener('click', () => {
-    playButton.remove();
-    preview.remove();
-    video.classList.add('presentation-media__video--played');
-    video.insertAdjacentHTML('afterbegin', '<iframe width="364" height="228" src="' + videoSource + '" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> ');
-  });
-
+  if (video) {
+    const playButton = video.querySelector('.presentation-media__video-play');
+    const preview = video.querySelector('img');
+    const videoSource = video.dataset.source;
+    playButton.addEventListener('click', () => {
+      playButton.remove();
+      preview.remove();
+      video.classList.add('presentation-media__video--played');
+      video.insertAdjacentHTML('afterbegin', '<iframe width="364" height="228" src="' + videoSource + '" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> ');
+    });
+  } else {
+    return;
+  }
 });
 
 // ---------------------------------

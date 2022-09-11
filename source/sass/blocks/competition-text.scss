@@ -9,38 +9,49 @@
     font-size: 90px;
     line-height: 90px;
     font-weight: 700;
-    letter-spacing: 0.03em;
+    letter-spacing: 2.7px;
     color: $color-default-white;
     padding-top: 2px;
-    margin: 0;
+    margin: 0 50px 0 0;
     height: fit-content;
 
-    @media #{$not-wide-vp} {
+    @media #{$middle-vp} {
       font-size: 52px;
       line-height: 52px;
+      letter-spacing: 1.5px;
+      margin: 0;
+    }
+
+    @media #{$narrow-vp} {
+      font-size: 52px;
+      line-height: 52px;
+      letter-spacing: 1.3px;
+      margin: 0;
     }
   }
 
   p {
     grid-column: 1 / -1;
-    font-family: $ff-roboto-condensed;
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
     color: $color-default-white;
-    margin: 9px 0 35px;
+    margin: 9px 0 45px;
 
     @media #{$not-wide-vp} {
       font-size: 12px;
       line-height: 18px;
-      margin: 0 0 20px;
+      margin: 0 0 30px;
+    }
+
+    @media #{$narrow-vp} {
+      margin: -1px 0 21px;
     }
   }
 
   a {
     display: block;
     grid-column: 1 / -1;
-    font-family: $ff-roboto-condensed;
     font-size: 12px;
     line-height: 14px;
     font-weight: 700;
@@ -88,10 +99,10 @@
   padding-left: 50px;
 
   @media #{$middle-vp} {
-    padding-left: 30px;
+    padding-left: 29px;
   }
 
   @media #{$narrow-vp} {
-    padding-left: 29px;
+    padding-left: 31px;
   }
 }

@@ -1,0 +1,19 @@
+.coaches-card-title h3,
+.coaches-card-title span {
+  display: block;
+  color: $color-default-white;
+  text-align: center;
+}
+
+.coaches-card-title h3 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+}
+
+.coaches-card-title span {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $sport-text-color;
+}

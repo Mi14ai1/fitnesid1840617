@@ -6,7 +6,7 @@
   height: 100%;
   padding: 0 56px;
 
-  &__slide {
+  .coaches-slider__slide {
     min-width: 0;
     width: 260px;
     height: 294px;
@@ -24,10 +24,10 @@
 
   @media #{$narrow-vp} {
     max-width: initial;
-    padding: 0 20px;
+    padding: 0 5px;
   }
 }
 
 .coaches-slider__swiper {
-  padding: 20px 0;
+  padding: 35px 0;
 }

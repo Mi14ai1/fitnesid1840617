@@ -1,0 +1,41 @@
+.advantages-card-definition {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages-card-definition p {
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 71px;
+  line-height: 106px;
+  font-weight: 700;
+  color: transparent;
+  width: fit-content;
+  margin: 0;
+  background: $advantages-gradient;
+  background-clip: text;
+
+  @media #{$not-narrow-vp} {
+    //margin-top: -47px;
+  }
+
+  @media #{$wide-vp} {
+    //margin-top: -57px;
+  }
+
+  @media #{$not-wide-vp} {
+    font-size: 58px;
+    line-height: 87px;
+  }
+}
+
+.advantages-card-definition span {
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: -20px;
+  padding-left: 1px;
+
+  @media #{$narrow-vp} {
+    text-align: center;
+  }
+}

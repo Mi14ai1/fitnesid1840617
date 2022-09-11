@@ -6,37 +6,31 @@
   border: 7px solid;
   border-image: $border-gradient;
   border-image-slice: 1;
-
   min-height: 211px;
 
-  dl {
-    flex-grow: 1;
-    margin: 0;
-
-    @media #{$narrow-vp} {
-      text-align: center;
-    }
-  }
-
-  dt,
-  dd,
+  h3,
+  p,
   a {
-    font-family: $ff-roboto-condensed;
     color: $color-biscay;
     margin: 0;
   }
 
-  dt {
+  h3 {
     font-size: 26px;
     line-height: 38px;
     font-weight: 700;
     margin-bottom: 3px;
   }
 
-  dd {
+  p {
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
+    padding-right: 38px;
+
+    @media #{$narrow-vp} {
+      padding-right: 0;
+    }
   }
 
   a {
@@ -52,8 +46,22 @@
     }
   }
 
+  &--discount {
+    p {
+      padding-right: 0;
+    }
+  }
+
   @media #{$narrow-vp} {
     padding-top: 30px;
     padding-bottom: 41px;
+  }
+}
+
+.promo-card__container {
+  flex-grow: 1;
+
+  @media #{$narrow-vp} {
+    text-align: center;
   }
 }

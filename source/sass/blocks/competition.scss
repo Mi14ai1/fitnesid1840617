@@ -6,7 +6,7 @@
   }
 
   @media #{$narrow-vp} {
-    padding: 70px 15px;
+    padding: 69px 15px;
   }
 }
 
@@ -41,6 +41,8 @@
 }
 
 .competition__text {
+  max-width: 500px;
+  width: 100%;
   flex-grow: 1;
 
   @media #{$middle-vp} {

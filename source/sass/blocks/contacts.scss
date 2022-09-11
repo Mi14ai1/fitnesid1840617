@@ -1,8 +1,8 @@
 .contacts {
-  &__container {
+  .contacts__container {
     display: flex;
     justify-content: space-between;
-    max-width: 400px;
+    max-width: 404px;
     padding-top: 40px;
     padding-left: 4px;
 
@@ -19,19 +19,19 @@
     }
   }
 
-  dl {
+  .contacts__list {
     margin: 0;
   }
 
   a,
-  dt,
-  dd {
+  h3,
+  p {
     font-family: $ff-roboto-condensed;
     color: $color-blue-zodiac;
     margin: 0;
   }
 
-  dt {
+  h3 {
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
@@ -45,7 +45,7 @@
     }
   }
 
-  dd {
+  p {
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
@@ -60,7 +60,7 @@
     text-decoration: none;
   }
 
-  dl + dl {
+  .contacts__list + .contacts__list {
     position: relative;
     padding-left: 60px;
 
@@ -81,7 +81,7 @@
       padding-left: 48px;
 
       &::before {
-        height: 128.5px;
+        height: 128px;
       }
     }
 
@@ -90,7 +90,7 @@
     }
   }
 
-  &__item {
+  .contacts__item {
     margin-bottom: 19px;
   }
 }

@@ -18,43 +18,22 @@
     z-index: 0;
   }
 
-  p,
-  dd,
-  dt {
-    font-family: $ff-roboto-condensed;
-    color: $color-default-white;
-  }
-
   p {
     position: relative;
     display: inline-block;
     vertical-align: baseline;
-
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+    color: $color-default-white;
     width: 100%;
     z-index: 1;
     margin: 0;
     text-align: center;
-  }
 
-  dl {
-    margin: 0 0 32px;
-    width: fit-content;
-  }
-
-  dt,
-  p {
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 700;
-    margin: 0;
-  }
-
-  dd {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    text-align: center;
-    margin: -3px 0 0;
+    @media #{$middle-vp} {
+      padding-left: 8px;
+    }
   }
 
   ul {
@@ -65,7 +44,6 @@
 
   li {
     position: relative;
-    font-family: $ff-roboto-condensed;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
@@ -85,7 +63,7 @@
     }
   }
 
-  &__info {
+  .coaches-card__info {
     position: absolute;
     z-index: -1;
   }
@@ -108,17 +86,6 @@
       scrollbar-width: thin;
       scrollbar-color: $coaches-info-background-color;
 
-      dl {
-        @media #{$narrow-vp} {
-          margin: 0 0 33px;
-          padding-left: 5px;
-        }
-      }
-
-      dd {
-        color: $sport-text-color;
-      }
-
       &::-webkit-scrollbar {
         width: 3px;
       }
@@ -133,7 +100,7 @@
       }
 
       @media #{$narrow-vp} {
-        padding: 41px 20px 20px 35px;
+        padding: 42px 20px 20px 35px;
       }
     }
 
@@ -149,4 +116,31 @@
     height: 274px;
   }
   margin: 0;
+}
+
+.coaches-card__title {
+  h3 {
+    margin: 0 37px 0 0;
+
+    @media #{$middle-vp} {
+      margin: 0 44px 0 -3px;
+    }
+
+    @media #{$narrow-vp} {
+      margin: 0 17px 0 0;
+    }
+  }
+
+  span {
+    margin: -3px 36px 32px 0;
+
+    @media #{$middle-vp} {
+      margin: -3px 45px 32px 0;
+    }
+
+    @media #{$narrow-vp} {
+      margin: -3px 0 32px 0;
+      padding-right: 14px;
+    }
+  }
 }

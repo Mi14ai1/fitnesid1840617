@@ -10,10 +10,8 @@
   span {
     display: inline-block;
     vertical-align: baseline;
-    font-family: $ff-roboto-condensed;
     font-size: 18px;
     line-height: 27px;
-    font-weight: 400;
     color: $color-blue-zodiac;
 
     margin-bottom: 39px;
@@ -28,17 +26,15 @@
   }
 
   p {
-    font-family: $ff-roboto-condensed;
     font-size: 16px;
     line-height: 24px;
-    font-weight: 400;
     letter-spacing: -0.2px;
     color: $color-blue-zodiac;
 
     margin: 0;
   }
 
-  &__description + &__description {
+  .presentation-text__description + .presentation-text__description {
     margin-top: 6px;
   }
 }

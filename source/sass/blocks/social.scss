@@ -1,6 +1,13 @@
 .social {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25px, max-content));
+  gap: 11px;
+  max-width: 300px;
   line-height: 0;
+
+  @media #{$middle-vp} {
+    max-width: 100px;
+  }
 }
 
 .social a {

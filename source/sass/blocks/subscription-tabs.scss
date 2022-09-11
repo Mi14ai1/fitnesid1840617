@@ -16,6 +16,10 @@
   @media #{$middle-vp} {
     max-width: 331px;
   }
+
+  @media #{$narrow-vp} {
+    padding: 0 0 2px;
+  }
 }
 
 .subscription-tabs__controls-item {
@@ -25,14 +29,22 @@
   &:last-child {
     justify-self: flex-end;
   }
+
+  &--left-indent {
+    @media #{$middle-vp} {
+      padding-left: 3px;
+    }
+  }
+
+  @media #{$narrow-vp} {
+    padding: 0 1px;
+  }
 }
 
 .subscription-tabs__button {
   position: relative;
-  font-family: $ff-roboto-condensed;
   font-size: 20px;
   line-height: 30px;
-  font-weight: 400;
   color: $tab-button-color;
 
   padding: 0;
@@ -51,7 +63,8 @@
 
       @media #{$narrow-vp} {
         left: 0;
-        width: 100%;
+        bottom: -14px;
+        width: calc(100% + 5px);
       }
     }
   }

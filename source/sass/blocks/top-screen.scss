@@ -1,33 +1,59 @@
 .top-screen {
-  padding-top: 51px;
+  position: relative;
   padding-bottom: 51px;
-  background: $top-gradient;
 
-  &__grid {
+  .top-screen__grid {
     display: flex;
+    justify-content: flex-end;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: $top-gradient;
+    z-index: -1;
+
+    @media #{$middle-vp} {
+      background: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+    }
+
+    @media #{$narrow-vp} {
+      background: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+    }
   }
 
   @media #{$middle-vp} {
-    padding-bottom: 93px;
-    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+    padding-bottom: 82px;
   }
 
   @media #{$narrow-vp} {
     padding-bottom: 37px;
-    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 }
 
 .top-screen__text {
-  padding-top: 111px;
+  padding-top: 78px;
   margin-right: 44px;
   padding-right: 20px;
 
   @media #{$middle-vp} {
-    padding-top: 86px;
+    padding-top: 54px;
     padding-right: 30px;
     margin-right: 0;
   }
+
+  @media #{$narrow-vp} {
+    margin: 0;
+    padding: 56px 0 45px;
+  }
+}
+
+.top-screen__title-container {
+  margin-left: auto;
 }
 
 .top-screen img {
@@ -35,9 +61,12 @@
   width: 100%;
   object-fit: contain;
 
+  @media #{$wide-vp} {
+    margin-top: -33px;
+  }
+
   @media #{$middle-vp} {
     height: 100%;
-    margin-top: 21px;
   }
 
   @media #{$narrow-vp} {

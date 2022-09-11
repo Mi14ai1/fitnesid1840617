@@ -1,3 +1,62 @@
+.page {
+  div {
+    box-sizing: border-box;
+  }
+
+  h3,
+  p,
+  li,
+  a,
+  span,
+  input {
+    font-family: $ff-roboto-condensed;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+  }
+
+  input:placeholder {
+    font-family: $ff-roboto-condensed;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+  }
+
+  h2 {
+    font-family: $ff-bebas-neue;
+    font-size: 49px;
+    line-height: 49px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: $section-title-color;
+    margin: 0;
+
+    @media #{$middle-vp} {
+      font-size: 42px;
+      line-height: 42px;
+    }
+
+    @media #{$narrow-vp} {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+
+  a:hover {
+    opacity: 0.8;
+  }
+
+  a:active {
+    opacity: 0.3;
+  }
+
+  a:focus-visible {
+    outline: none;
+    border-radius: 6px;
+    background: $color-blue-zodiac-transparent;
+  }
+}
+
 .page__wrapper {
   position: relative;
   display: flex;

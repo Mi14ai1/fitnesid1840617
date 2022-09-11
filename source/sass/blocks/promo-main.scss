@@ -7,58 +7,6 @@
     margin-right: 40px;
   }
 
-  dl {
-    flex-grow: 1;
-    margin: 0;
-  }
-
-  dt,
-  dd,
-  a {
-    font-family: $ff-roboto-condensed;
-    color: $color-default-white;
-
-
-    @media #{$narrow-vp} {
-      text-align: center;
-    }
-  }
-
-  dt {
-    font-size: 28px;
-    line-height: 44px;
-    font-weight: 700;
-    margin: 0;
-    margin-bottom: -25px;
-  }
-
-  &__price {
-    font-size: 70px;
-    line-height: 109px;
-    font-weight: 700;
-    margin: 0;
-  }
-
-  &__description {
-    font-size: 18px;
-    line-height: 25px;
-    font-weight: 400;
-    margin: 0;
-
-    @media #{$narrow-vp} {
-      margin-top: -5px;
-      margin-bottom: 31px;
-    }
-  }
-
-  a {
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.7px;
-    text-underline-offset: 4px;
-  }
 
   img {
     @media #{$not-wide-vp} {
@@ -86,6 +34,6 @@
   padding: 33px 45px 46px;
 
   @media #{$middle-vp} {
-    max-width: 189px;
+    max-width: 279px;
   }
 }

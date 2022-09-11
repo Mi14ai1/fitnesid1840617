@@ -1,4 +1,3 @@
-// Swiper 7.4.1
 import Swiper from './vendor/swiper-bundle';
 
 let swiper = new Swiper('.coaches-slider__swiper', {
@@ -25,6 +24,8 @@ let swiper = new Swiper('.coaches-slider__swiper', {
 
 let carousel = new Swiper('.reviews-swiper', {
   slidesPerView: 1,
+  spaceBetween: -1,
+  autoHeight: true,
   navigation: {
     nextEl: '.slider-controls-review-next',
     prevEl: '.slider-controls-review-prev',

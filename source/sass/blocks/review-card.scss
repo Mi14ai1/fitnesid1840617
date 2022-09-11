@@ -4,22 +4,44 @@
   background: $review-background-color;
   padding: 62px 62px 48px;
 
-  dl {
+  .review-card__text {
     margin: 0;
+    max-height: 160px;
+    overflow-y: auto;
+
+    scrollbar-width: thin;
+    scrollbar-color: $coaches-info-background-color;
+
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $coaches-info-background-color;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 2px;
+      background-color: $color-razzmatazz;
+    }
 
     @media #{$not-narrow-vp} {
       transform: translateY(-8px);
     }
+
+    @media #{$narrow-vp} {
+      max-height: 265px;
+    }
   }
 
-  dd,
-  dt {
+  h3,
+  p {
     font-family: $ff-roboto-condensed;
     color: $color-default-white;
     margin: 0;
   }
 
-  dt {
+  h3 {
     font-size: 20px;
     line-height: 30px;
     font-weight: 700;
@@ -34,7 +56,7 @@
     }
   }
 
-  dd {
+  p {
     font-size: 16px;
     line-height: 22.5px;
     font-weight: 400;
