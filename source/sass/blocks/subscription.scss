@@ -43,16 +43,16 @@
     width: 1160px;
     margin: 0 auto;
 
-    &--overflow {
-      width: 1446px;
-
-      @media #{$middle-vp} {
-        width: 844px;
-      }
-    }
-
     @media #{$middle-vp} {
       width: 100%;
+    }
+  }
+
+  .subscription__plates-container-overflow {
+    width: 1446px;
+
+    @media #{$middle-vp} {
+      width: 844px;
     }
   }
 

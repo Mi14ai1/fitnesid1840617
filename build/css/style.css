@@ -1229,7 +1229,7 @@ template {
   margin: 0 auto;
 }
 
-.subscription__plates .subscription__plates-container--overflow {
+.subscription__plates .subscription__plates-container-overflow {
   width: 1446px;
 }
 
@@ -3620,12 +3620,12 @@ template {
     margin-bottom: 19px;
   }
 
-  .subscription__plates .subscription__plates-container--overflow {
-    width: 844px;
-  }
-
   .subscription__plates .subscription__plates-container {
     width: 100%;
+  }
+
+  .subscription__plates .subscription__plates-container-overflow {
+    width: 844px;
   }
 
   .subscription__plates img {
