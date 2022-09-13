@@ -1402,13 +1402,15 @@ template {
   box-shadow: inset 0 0 0 1px #102654, 0 0 0 1px #102654;
 }
 
-.subscription-card:hover {
+.subscription-card:hover,
+.subscription-card:focus-within {
   -o-border-image: -o-linear-gradient(301.18deg, #d10a42 0.85%, #00359f 100%);
   border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 1;
 }
 
-.subscription-card:hover .subscription-card__button {
+.subscription-card:hover .subscription-card__button,
+.subscription-card:focus-within .subscription-card__button {
   -webkit-box-shadow: none;
   box-shadow: none;
   background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
@@ -3122,7 +3124,6 @@ template {
   }
 
   .competition-text a {
-    max-width: initial;
     max-width: 203px;
     width: 100%;
     margin: 10px 0 0 -2px;

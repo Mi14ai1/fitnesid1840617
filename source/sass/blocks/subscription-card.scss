@@ -125,7 +125,8 @@
       0 0 0 1px $color-blue-zodiac;
   }
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     border-image: $subscription-border-gradient;
     border-image-slice: 1;
 

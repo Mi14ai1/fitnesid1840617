@@ -54,27 +54,29 @@ const showTab = (button) => {
 
 };
 
+const toggleTabButton = (tabButton) => {
+  if (tabButton.classList.contains(`${ACTIVE}`)) {
+    return;
+  }
+  tabs.forEach((el) => {
+    el.classList.remove(`${TABACTIVE}`);
+  });
+  tabButtons.forEach((el) => {
+    el.classList.remove(`${ACTIVE}`);
+  });
+  tabButton.classList.add(`${ACTIVE}`);
+  showTab(tabButton);
+};
+
 tabButtons.forEach((button) => {
   button.addEventListener('click', (evt) => {
     evt.preventDefault();
-    const tabButton = evt.target;
-    if (evt.target.classList.contains(`${ACTIVE}`)) {
-      return;
-    }
-    tabs.forEach((el) => {
-      if (el.classList.contains(`${TABACTIVE}`)) {
-        el.classList.remove(`${TABACTIVE}`);
-      }
-    });
-    tabButtons.forEach((el) => {
-      if (el.classList.contains(`${ACTIVE}`)) {
-        el.classList.remove(`${ACTIVE}`);
-
-      }
-    });
-    tabButton.classList.add(`${ACTIVE}`);
-
-    showTab(evt.target);
+    toggleTabButton(evt.target);
+  }
+  );
+  button.addEventListener('focus', (evt) => {
+    evt.preventDefault();
+    toggleTabButton(evt.target);
   });
 });
 
