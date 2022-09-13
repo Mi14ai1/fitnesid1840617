@@ -52,6 +52,7 @@
     width: 1446px;
 
     @media #{$middle-vp} {
+      margin-left: auto;
       width: 844px;
     }
   }

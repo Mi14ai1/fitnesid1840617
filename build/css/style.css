@@ -3123,6 +3123,7 @@ template {
 
   .competition-text a {
     max-width: initial;
+    max-width: 203px;
     width: 100%;
     margin: 10px 0 0 -2px;
   }
@@ -3648,6 +3649,7 @@ template {
   }
 
   .subscription__plates .subscription__plates-container-overflow {
+    margin-left: auto;
     width: 844px;
   }
 
