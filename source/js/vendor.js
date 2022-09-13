@@ -10,7 +10,7 @@ let swiper = new Swiper('.coaches-slider__swiper', {
     prevEl: '.slider-controls-coaches-prev',
   },
   breakpoints: {
-    640: {
+    500: {
       centeredSlides: false,
       spaceBetween: 30,
     },

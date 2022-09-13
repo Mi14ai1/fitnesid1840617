@@ -91,6 +91,7 @@
   }
 
   @media #{$narrow-vp} {
+    grid-template-columns: min-content 1fr;
     padding: 47px 41px 50px 45px;
   }
 }

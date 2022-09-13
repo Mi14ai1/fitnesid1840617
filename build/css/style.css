@@ -1127,7 +1127,6 @@ template {
 .presentation-media__video {
   position: absolute;
   left: 22px;
-  bottom: 0;
   line-height: 0;
   width: 364px;
   height: 228px;
@@ -2519,6 +2518,10 @@ template {
     padding-bottom: 115px;
   }
 
+  .presentation-media__video {
+    top: 288px;
+  }
+
   .tabs-content__cards-list {
     row-gap: 10px;
   }
@@ -2609,9 +2612,12 @@ template {
   }
 
   .presentation-media__video img {
-    position: absolute;
-    left: 0;
-    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .presentation-media__video {
+    bottom: 0;
   }
 
   .presentation-media__video-play {
@@ -2954,7 +2960,7 @@ template {
 
   .presentation {
     padding-top: 70px;
-    padding-bottom: 277px;
+    padding-bottom: 70px;
   }
 
   .presentation__grid {
@@ -2979,14 +2985,33 @@ template {
     padding-right: 30px;
   }
 
-  .presentation-media__video {
-    left: 50%;
-    max-width: 320px;
+  .presentation-media iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .presentation-media__video img {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
-    height: 167px;
-    -webkit-transform: translate(-50%, 207px);
-    -ms-transform: translate(-50%, 207px);
-    transform: translate(-50%, 207px);
+    height: 100%;
+  }
+
+  .presentation-media__video {
+    position: relative;
+    left: 0;
+    width: 100%;
+    min-height: 167px;
+    height: initial;
+    margin-top: 40px;
+    padding-top: 52.19%;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
   }
 
   .presentation-media__video-play-button {
@@ -3109,6 +3134,10 @@ template {
   }
 
   .competition-text {
+    -ms-grid-columns: -webkit-min-content 1fr;
+    -ms-grid-columns: min-content 1fr;
+    grid-template-columns: -webkit-min-content 1fr;
+    grid-template-columns: min-content 1fr;
     padding: 47px 41px 50px 45px;
   }
 
@@ -3152,7 +3181,7 @@ template {
 
   .coaches-slider {
     max-width: initial;
-    padding: 0 5px;
+    padding: 0 15px;
   }
 
   .coaches-card:hover .coaches-card__info {
@@ -3869,6 +3898,13 @@ template {
 @media (max-width: 1365px) and (min-width: 1200px) {
   .container--coaches {
     max-width: calc(100vw - 166px);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  .presentation-media__video {
+    width: calc((100vw - 768px) / 2 + 266px);
+    height: calc(((100vw - 768px) / 2 + 266px) * 167 / 266);
   }
 }
 

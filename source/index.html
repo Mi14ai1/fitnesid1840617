@@ -163,9 +163,9 @@
           </div>
         </section>
         <section class="subscription">
-          <div class="container subscription-tabs">
+          <div class="container subscription-tabs no-script">
             <h2>Абонементы</h2>
-            <ul class="subscription-tabs__controls-list no-script">
+            <ul class="subscription-tabs__controls-list">
               <li class="subscription-tabs__controls-item subscription-tabs__controls-item--active">
                 <button class="button subscription-tabs__button subscription-tabs__button--active js-month">1 месяц</button>
               </li>
@@ -351,9 +351,9 @@
             </picture>
           </div>
         </section>
-        <section class="coaches container container--coaches">
+        <section class="coaches container container--coaches no-script">
           <h2>Тренеры</h2>
-          <div class="coaches-slider no-script">
+          <div class="coaches-slider">
             <div class="swiper coaches-slider__swiper">
               <div class="swiper-wrapper coaches-slider__wrapper">
                 <div class="swiper-slide coaches-slider__slide">
@@ -891,11 +891,11 @@
                 <div class="free-training__inputs">
                   <label>
                     <span class="visually-hidden">Имя</span>
-                    <input type="text" name="name" placeholder="Имя" required>
+                    <input type="text" name="name" placeholder="Имя" minlength="2" required>
                   </label>
                   <label>
                     <span class="visually-hidden">Телефон</span>
-                    <input type="tel" name="phone" placeholder="Телефон" required>
+                    <input type="tel" name="phone" placeholder="Телефон" minlength="10" maxlength="18" required>
                   </label>
                 </div>
                 <button class="button" type="submit">отправить</button>

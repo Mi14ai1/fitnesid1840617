@@ -15,14 +15,6 @@
   background: $advantages-gradient;
   background-clip: text;
 
-  @media #{$not-narrow-vp} {
-    //margin-top: -47px;
-  }
-
-  @media #{$wide-vp} {
-    //margin-top: -57px;
-  }
-
   @media #{$not-wide-vp} {
     font-size: 58px;
     line-height: 87px;
