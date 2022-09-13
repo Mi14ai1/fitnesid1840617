@@ -66,6 +66,45 @@
   .coaches-card__info {
     position: absolute;
     z-index: -1;
+
+    h3,
+    span {
+      display: block;
+      color: $color-default-white;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 700;
+      margin: 0 37px 0 0;
+
+      @media #{$middle-vp} {
+        margin: 0 44px 0 -3px;
+      }
+
+      @media #{$narrow-vp} {
+        margin: 0 17px 0 0;
+      }
+    }
+
+    span {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      color: $sport-text-color;
+      margin: -3px 36px 32px 0;
+
+      @media #{$middle-vp} {
+        margin: -3px 45px 32px 0;
+      }
+
+      @media #{$narrow-vp} {
+        margin: -3px 0 32px 0;
+        padding-right: 14px;
+      }
+    }
   }
 
   &:hover {
@@ -116,31 +155,4 @@
     height: 274px;
   }
   margin: 0;
-}
-
-.coaches-card__title {
-  h3 {
-    margin: 0 37px 0 0;
-
-    @media #{$middle-vp} {
-      margin: 0 44px 0 -3px;
-    }
-
-    @media #{$narrow-vp} {
-      margin: 0 17px 0 0;
-    }
-  }
-
-  span {
-    margin: -3px 36px 32px 0;
-
-    @media #{$middle-vp} {
-      margin: -3px 45px 32px 0;
-    }
-
-    @media #{$narrow-vp} {
-      margin: -3px 0 32px 0;
-      padding-right: 14px;
-    }
-  }
 }

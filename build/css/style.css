@@ -1692,6 +1692,28 @@ template {
   z-index: -1;
 }
 
+.coaches-card .coaches-card__info h3,
+.coaches-card .coaches-card__info span {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+}
+
+.coaches-card .coaches-card__info h3 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  margin: 0 37px 0 0;
+}
+
+.coaches-card .coaches-card__info span {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #b6bdcc;
+  margin: -3px 36px 32px 0;
+}
+
 .coaches-card:hover {
   -webkit-box-shadow: 0 0 35px rgba(42, 59, 99, 0.17);
   box-shadow: 0 0 35px rgba(42, 59, 99, 0.17);
@@ -1726,34 +1748,6 @@ template {
 .coaches-card:hover .coaches-card__info::-webkit-scrollbar-thumb {
   border-radius: 2px;
   background-color: #d10a42;
-}
-
-.coaches-card__title h3 {
-  margin: 0 37px 0 0;
-}
-
-.coaches-card__title span {
-  margin: -3px 36px 32px 0;
-}
-
-.coaches-card-title h3,
-.coaches-card-title span {
-  display: block;
-  color: #ffffff;
-  text-align: center;
-}
-
-.coaches-card-title h3 {
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 700;
-}
-
-.coaches-card-title span {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #b6bdcc;
 }
 
 .advantages {
@@ -3184,6 +3178,15 @@ template {
     padding: 0 15px;
   }
 
+  .coaches-card .coaches-card__info h3 {
+    margin: 0 17px 0 0;
+  }
+
+  .coaches-card .coaches-card__info span {
+    margin: -3px 0 32px 0;
+    padding-right: 14px;
+  }
+
   .coaches-card:hover .coaches-card__info {
     padding: 42px 20px 20px 35px;
   }
@@ -3191,15 +3194,6 @@ template {
   .coaches-card {
     width: 226px;
     height: 274px;
-  }
-
-  .coaches-card__title h3 {
-    margin: 0 17px 0 0;
-  }
-
-  .coaches-card__title span {
-    margin: -3px 0 32px 0;
-    padding-right: 14px;
   }
 
   .advantages h2 {
@@ -3744,16 +3738,16 @@ template {
     padding-left: 8px;
   }
 
-  .coaches-card {
-    width: 268px;
-  }
-
-  .coaches-card__title h3 {
+  .coaches-card .coaches-card__info h3 {
     margin: 0 44px 0 -3px;
   }
 
-  .coaches-card__title span {
+  .coaches-card .coaches-card__info span {
     margin: -3px 45px 32px 0;
+  }
+
+  .coaches-card {
+    width: 268px;
   }
 
   .advantages h2 {
