@@ -96,7 +96,7 @@
     transform: translate(-50%, 83px);
   }
 
-  @media (min-width: 769px) and (max-width: 1199px) {
+  @media (min-width: 786px) and (max-width: 1199px) {
     width: calc((100vw - 768px) / 2 + 266px);
     height: calc(((100vw - 768px) / 2 + 266px) * 167 / 266);
   }
