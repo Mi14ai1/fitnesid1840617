@@ -28,6 +28,8 @@
   }
 
   @media #{$middle-vp} {
+    display: grid;
+    grid-template-columns: 1fr 1.32fr;
     justify-content: space-between;
   }
 

@@ -13,12 +13,19 @@
       width: 100%;
     }
 
+    @media #{$middle-vp} {
+      height: 100%;
+    }
+
     @media #{$narrow-vp} {
       height: 100%;
     }
   }
 
   @media #{$middle-vp} {
+    display: grid;
+    grid-template-columns: 1fr 1.44fr;
+    min-height: 462px;
     margin-right: 0;
     max-width: 100%;
   }
@@ -35,5 +42,6 @@
 
   @media #{$middle-vp} {
     max-width: 279px;
+    padding: 33px 40px 46px 45px;
   }
 }

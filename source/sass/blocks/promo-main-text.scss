@@ -1,6 +1,7 @@
 .promo-main-text__container {
   flex-grow: 1;
   margin: 0;
+  padding-bottom: 20px;
 }
 
 .promo-main-text {
@@ -44,7 +45,7 @@
 
     @media #{$narrow-vp} {
       margin-top: -5px;
-      margin-bottom: 31px;
+      margin-bottom: 11px;
     }
   }
 
@@ -55,5 +56,11 @@
     text-transform: uppercase;
     letter-spacing: 0.7px;
     text-underline-offset: 4px;
+  }
+
+  @media #{$middle-vp} {
+    min-height: 436px;
+    height: fit-content;
+    padding-bottom: 20px;
   }
 }

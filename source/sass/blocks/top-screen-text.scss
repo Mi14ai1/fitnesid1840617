@@ -139,4 +139,8 @@
       box-shadow: 0 0 0 4px $color-default-white;
     }
   }
+
+  @media #{$narrow-vp} {
+    width: 100%;
+  }
 }

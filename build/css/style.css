@@ -1950,6 +1950,7 @@ template {
   -ms-flex-positive: 1;
   flex-grow: 1;
   margin: 0;
+  padding-bottom: 20px;
 }
 
 .promo-main-text h3,
@@ -2942,6 +2943,10 @@ template {
     box-shadow: 0 0 0 4px #ffffff;
   }
 
+  .top-screen-text {
+    width: 100%;
+  }
+
   .header {
     padding: 18px 15px;
   }
@@ -3327,7 +3332,7 @@ template {
 
   .promo-main-text p {
     margin-top: -5px;
-    margin-bottom: 31px;
+    margin-bottom: 11px;
   }
 
   .promo-card p {
@@ -3693,6 +3698,10 @@ template {
   }
 
   .competition__content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1.32fr;
+    grid-template-columns: 1fr 1.32fr;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -3853,13 +3862,31 @@ template {
     width: 100%;
   }
 
+  .promo-main img {
+    height: 100%;
+  }
+
   .promo-main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1.44fr;
+    grid-template-columns: 1fr 1.44fr;
+    min-height: 462px;
     margin-right: 0;
     max-width: 100%;
   }
 
   .promo-main__text {
     max-width: 279px;
+    padding: 33px 40px 46px 45px;
+  }
+
+  .promo-main-text {
+    min-height: 436px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 20px;
   }
 
   .reviews h2 {
