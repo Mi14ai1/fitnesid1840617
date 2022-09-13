@@ -3112,6 +3112,10 @@ template {
     max-width: 100%;
   }
 
+  .competition__text {
+    max-width: initial;
+  }
+
   .competition-text h2 {
     font-size: 52px;
     line-height: 52px;
@@ -3124,7 +3128,7 @@ template {
   }
 
   .competition-text a {
-    max-width: 203px;
+    max-width: initial;
     width: 100%;
     margin: 10px 0 0 -2px;
   }

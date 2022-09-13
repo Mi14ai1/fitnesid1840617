@@ -50,4 +50,8 @@
     max-width: 292px;
     width: 100%;
   }
+
+  @media #{$narrow-vp} {
+    max-width: initial;
+  }
 }
