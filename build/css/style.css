@@ -1054,6 +1054,9 @@ template {
 
 .header .header__logo {
   padding-right: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .header__phone {
@@ -2907,7 +2910,7 @@ template {
 
   .top-screen__text {
     margin: 0;
-    padding: 56px 0 45px;
+    padding: 51px 0 45px;
   }
 
   .top-screen img {
@@ -2947,8 +2950,12 @@ template {
     width: 100%;
   }
 
+  .header .header__logo {
+    margin-top: -1px;
+  }
+
   .header {
-    padding: 18px 15px;
+    padding: 19px 15px;
   }
 
   .header__logo svg {
@@ -3819,7 +3826,8 @@ template {
   }
 
   .advantages-card--main {
-    max-width: 442px;
+    max-width: calc(61% - 1px);
+    min-height: 239px;
     width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -3869,8 +3877,8 @@ template {
   .promo-main {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1.44fr;
-    grid-template-columns: 1fr 1.44fr;
+    -ms-grid-columns: 1fr 1.43fr;
+    grid-template-columns: 1fr 1.43fr;
     min-height: 462px;
     margin-right: 0;
     max-width: 100%;

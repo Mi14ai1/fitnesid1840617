@@ -72,7 +72,8 @@
   }
 
   @media #{$middle-vp} {
-    max-width: 442px;
+    max-width: calc(61% - 1px);
+    min-height: 239px;
     width: 100%;
     height: fit-content;
     padding: 33px 120px;

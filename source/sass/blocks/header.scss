@@ -8,6 +8,11 @@
 
   .header__logo {
     padding-right: 20px;
+    height: fit-content;
+
+    @media #{$narrow-vp} {
+      margin-top: -1px;
+    }
   }
 
   @media #{$middle-vp} {
@@ -15,7 +20,7 @@
   }
 
   @media #{$narrow-vp} {
-    padding: 18px 15px;
+    padding: 19px 15px;
   }
 }
 
