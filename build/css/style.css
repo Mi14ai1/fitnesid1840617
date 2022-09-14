@@ -3496,6 +3496,7 @@ template {
 
   .footer .footer__navigation {
     padding-top: 1px;
+    margin: 0 auto;
   }
 
   .footer {
@@ -3505,6 +3506,7 @@ template {
 
   .footer__social {
     margin-top: -2px;
+    margin-left: 43px;
     padding-right: 0;
   }
 
@@ -3678,7 +3680,7 @@ template {
   }
 
   .competition {
-    padding: 100px 45px 100px;
+    padding: 99px 45px;
   }
 
   .competition__content {
@@ -3726,7 +3728,7 @@ template {
   }
 
   .coaches {
-    padding-bottom: 65px;
+    padding-bottom: 55px;
   }
 
   .coaches-slider {
