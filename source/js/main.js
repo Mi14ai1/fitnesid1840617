@@ -1,10 +1,6 @@
 const ACTIVE = 'subscription-tabs__button--active';
 const TABACTIVE = 'tab--active';
 const TICKETS = ['js-month', 'js-half-year', 'js-year'];
-const PHONELENGTH = {
-  withoutCode: 10,
-  withCode: 11,
-};
 
 const connection = document.querySelector('.connection');
 const form = connection.querySelector('form');
@@ -34,9 +30,6 @@ if (form) {
     const name = form.querySelector('input[name=name]');
     phone.value = phone.value.replace(/\D/g, '');
     name.value = name.value.replace(/\W/, '');
-    if (phone.value.length < PHONELENGTH.withoutCode || phone.value.length > PHONELENGTH.withCode) {
-      return;
-    }
     form.submit();
   });
 }

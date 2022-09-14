@@ -142,7 +142,7 @@
     width: 100%;
     height: 100%;
     opacity: 0.2;
-    background: no-repeat center / cover url("../../img/svg/play-indicator.svg#play-indicator");
+    background: no-repeat center / cover url("../img/svg/play-indicator.svg#play-indicator");
   }
 
   @media #{$not-wide-vp} {
@@ -172,7 +172,7 @@
     width: 13px;
     height: 15px;
     transform: translate(calc(-50% + 2px), calc(-50% - 1px));
-    background: no-repeat center / cover url("../../img/svg/play-indicator.svg#play");
+    background: no-repeat center / cover url("../img/svg/play-indicator.svg#play");
 
     @media #{$not-wide-vp} {
       width: 11px;

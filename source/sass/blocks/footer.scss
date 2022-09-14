@@ -66,6 +66,13 @@
     }
   }
 
+  a:focus-visible {
+    outline: none;
+    border-radius: 6px;
+    background: transparent;
+    box-shadow: 0 0 9px 7px $color-blue-bayoux, inset 0 0 0 9px $color-blue-bayoux;
+  }
+
   @media #{$middle-vp} {
     padding-top: 47px;
     padding-bottom: 44px;

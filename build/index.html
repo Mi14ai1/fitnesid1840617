@@ -33,7 +33,7 @@
               <h2>Фитнес центр</h2>
               <p>Тренажёрный зал Групповые занятия Кардио-зона</p>
             </div>
-            <a href="#" class="button top-screen-text__button">Купить абонемент</a>
+            <a href="#subscription" class="button top-screen-text__button">Купить абонемент</a>
           </div>
           <picture>
             <source
@@ -162,7 +162,7 @@
             </div>
           </div>
         </section>
-        <section class="subscription">
+        <section id="subscription" class="subscription">
           <div class="container subscription-tabs no-script">
             <h2>Абонементы</h2>
             <ul class="subscription-tabs__controls-list">
@@ -975,7 +975,7 @@
                   </label>
                   <label>
                     <span class="visually-hidden">Телефон</span>
-                    <input type="tel" name="phone" placeholder="Телефон" minlength="10" maxlength="18" required>
+                    <input type="tel" name="phone" placeholder="Телефон" pattern="[0-9]+" required>
                   </label>
                 </div>
                 <button class="button" type="submit">отправить</button>
