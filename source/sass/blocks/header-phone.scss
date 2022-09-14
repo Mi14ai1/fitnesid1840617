@@ -1,5 +1,15 @@
 .header-phone {
   margin-left: auto;
+
+  a + a {
+    @media #{$wide-vp} {
+      margin-top: 10px;
+    }
+
+    @media #{$not-wide-vp} {
+      margin-left: 10px;
+    }
+  }
 }
 
 .header-phone a {

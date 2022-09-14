@@ -2454,6 +2454,10 @@ template {
 }
 
 @media (min-width: 1200px) {
+  .header-phone a + a {
+    margin-top: 10px;
+  }
+
   .footer .footer__navigation + .footer__navigation {
     margin-left: 40px;
   }
@@ -2480,7 +2484,7 @@ template {
   .header__phone {
     position: absolute;
     right: 0;
-    max-height: 440px;
+    max-height: 430px;
     overflow: hidden;
   }
 
@@ -2555,6 +2559,10 @@ template {
 }
 
 @media (max-width: 1199px) {
+  .header-phone a + a {
+    margin-left: 10px;
+  }
+
   .header-phone a {
     letter-spacing: 0.02em;
   }
@@ -2569,6 +2577,26 @@ template {
     margin-right: -2px;
     max-width: 187px;
     width: 100%;
+  }
+
+  .header {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .header__phone {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-left: 60px;
+    justify-self: flex-end;
   }
 
   .presentation__grid {
@@ -3564,6 +3592,7 @@ template {
   }
 
   .header__phone {
+    max-width: 600px;
     margin-top: -1px;
   }
 

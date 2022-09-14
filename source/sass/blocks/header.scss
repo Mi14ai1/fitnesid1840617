@@ -15,6 +15,10 @@
     }
   }
 
+  @media #{$not-wide-vp} {
+    justify-content: space-between;
+  }
+
   @media #{$middle-vp} {
     padding: 40px 45px 19px;
   }
@@ -46,11 +50,20 @@
   @media #{$wide-vp} {
     position: absolute;
     right: 0;
-    max-height: 440px;
+    max-height: 430px;
     overflow: hidden;
   }
 
+  @media #{$not-wide-vp} {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-left: 60px;
+    justify-self: flex-end;
+  }
+
   @media #{$middle-vp} {
+    max-width: 600px;
     margin-top: -1px;
   }
 }
