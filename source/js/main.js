@@ -25,11 +25,6 @@ if (form) {
   form.addEventListener('submit', (evt) => {
     evt.preventDefault();
     getFormData(form);
-
-    const phone = form.querySelector('input[name=phone]');
-    const name = form.querySelector('input[name=name]');
-    phone.value = phone.value.replace(/\D/g, '');
-    name.value = name.value.replace(/\W/, '');
     form.submit();
   });
 }
